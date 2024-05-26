@@ -1,0 +1,53 @@
+@font-face {
+    font-family: lb;
+    src: url("fonts/phetsarath-bold.ttf");
+}
+@font-face {
+    font-family: lr;
+    src: url("fonts/Phetsarath-Regular_0.ttf");
+}
+
+@font-face {
+    font-family: noto;
+    src: url("fonts/NotoSansLao-Regular.ttf");
+}
+@font-face {
+    font-family: notob;
+    src: url("fonts/NotoSansLao-SemiBold.ttf");
+} 
+
+@font-face {
+    font-family: robo;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: robob;
+    src: url("fonts/Roboto-Bold.ttf");
+} 
+
+body
+{
+    font-family: lr;
+    background-color: #263048;
+}
+
+.lb
+{
+    font-family: lb, 'robob';
+}
+
+.noto, noto
+{
+    font-family: 'noto','notol','Montserrat', 'robo';
+}
+
+.notob, notob
+{
+    font-family: 'notob','notolb','Montserrat', 'robob';
+}
+
+.simple-input
+{
+     background: #00000026; 
+}
