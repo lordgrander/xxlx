@@ -20,4 +20,10 @@ class buy_order extends Model
         'box_id',
         'created_at',
     ];
+
+    
+    public function boHb()
+    {
+        return $this->hasMany(buy::class, 'buy_order');
+    }
 }

@@ -34,8 +34,8 @@ body {
   }
   .btn-toggle:hover,
   .btn-toggle:focus {
-    color:blue; 
-    background-color: var(--bs-tertiary-bg);
+    color:white; 
+    background-color: red;
   }
   
   .btn-toggle::before {
@@ -53,6 +53,7 @@ body {
   .btn-toggle[aria-expanded="true"] {
     color:white;
   }
+
   .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
   }
@@ -62,9 +63,12 @@ body {
     margin-top: .125rem;
     margin-left: 1.25rem;
   }
+   
+
   .btn-toggle-nav a:hover,
   .btn-toggle-nav a:focus {
-    background-color: var(--bs-tertiary-bg);
+    background-color:red;
+    color:blue;
   }
   
   .scrollarea {

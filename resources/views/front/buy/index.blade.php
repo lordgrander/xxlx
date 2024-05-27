@@ -8,7 +8,7 @@
         <div class="col-12 mt-2">
             <div class="card notob p-3">
                 <div class="card-header text-center"> 
-                    <h3>ເລກວິ້ງ</h3>
+                    <h3>{{ $head_menu }}</h3>
                 </div>
                 <div class="card-body p-1 d-flex"> 
                     <table class="table   ">
@@ -248,7 +248,7 @@
                     // Proceed with AJAX only if all fields are valid
                     if (valid) {
                         $.ajax({
-                            url: '{{ route('buy.run.start') }}', // Replace with your Laravel route
+                            url: '{{ route('buy.run.start',$gain_number) }}', // Replace with your Laravel route
                             type: 'POST',
                             data: {
                                 custom_data: custom_data,
@@ -257,7 +257,14 @@
                                 _token: $('meta[name="csrf-token"]').attr('content') // Ensure the CSRF token is correctly included
                             },
                             success: function(response) {
-                                window.location.href = '{{ url('/2749/248/0302/4421/7799/778') }}/'+ response.order;
+                                if(response.status=='CLOSED')
+                                {
+                                    alert('ຂໍອະໄພປິດການຂາຍແລ້ວ');
+                                }
+                                else
+                                {
+                                    window.location.href = '{{ url('/2749/248/0302/4421/7799/778') }}/'+ response.order; 
+                                }
                                 
                             },
                             error: function(error) {

@@ -20,4 +20,9 @@ class buy extends Model
         'box_id',
         'created_at',
     ];
+
+    public function bINbo()
+    {
+        return $this->belongsTo(buy_order::class, 'buy_order','id');
+    }
 }

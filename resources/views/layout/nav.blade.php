@@ -9,32 +9,45 @@
     </a>
     <ul class="list-unstyled ps-0">
       <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-          Home
-        </button>
-        <div class="collapse" id="home-collapse" style="">
+        <a href="/">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"  data-bs-toggle="collapse"  aria-expanded="false">
+            1. ໜ້າຫຼັກ
+          </button>
+        </a>
+        <!-- <div class="collapse" id="home-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li> 
           </ul>
-        </div>
+        </div> -->
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-          ຜູ້ໃຊ້
+          2. ຜູ້ໃຊ້
         </button>
         <div class="collapse" id="dashboard-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li> 
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none text-white rounded">Overview</a></li> 
           </ul>
         </div>
       </li>
+      <!-- <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#in-collapse" aria-expanded="false">
+          3. ຝາກຖອນເງິນ
+        </button>
+        <div class="collapse" id="in-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="{{ route('buy.history') }}" class="link-body-emphasis d-inline-flex text-decoration-none text-white rounded">3.1 ຝາກ</a></li> 
+            <li><a href="{{ route('buy.history') }}" class="link-body-emphasis d-inline-flex text-decoration-none text-white rounded">3.2 ຖອນ</a></li> 
+          </ul>
+        </div>
+      </li> -->
       <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-          Orders
+          3. ປະຫວັດ
         </button>
         <div class="collapse" id="orders-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li> 
+            <li><a href="{{ route('buy.history') }}" class="link-body-emphasis d-inline-flex text-decoration-none text-white rounded">3.1 ການແທງ</a></li> 
           </ul>
         </div>
       </li>
@@ -45,7 +58,7 @@
         </button>
         <div class="collapse" id="account-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li> 
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none text-white rounded">New...</a></li> 
           </ul>
         </div>
       </li>
